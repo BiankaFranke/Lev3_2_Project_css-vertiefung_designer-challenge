@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 /* Colors */
 /* #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000 */
 
@@ -25,7 +24,8 @@ h1 {
 
 h3 {
     color: #dddddd;
-    font-size: 36px;
+    font-size: 75px;
+    padding-bottom: 40px;
 }
 
 a {
@@ -44,8 +44,30 @@ a {
 }
 
 #gallery img {
+    padding: 5% 0% 4% 0%;
     max-width: 100%;
     max-height: 100%;
+}
+
+nav img {
+    margin-left: 20px;
+}
+
+.FlyingBoy img {
+    height: 70%;
+    width: 70%;
+    transform: translate(45%, 0%);
+} 
+
+.intro img {
+    width: 30px;
+    height: 30px;
+}
+
+section .bigImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* nav */
@@ -60,16 +82,11 @@ nav {
     height: 60px;
 }
 
-nav img {
-    margin-left: 20px;
-}
-
 nav div {
     margin-left: 1.5%;
 }
 
 /* Header */
-
 header {
     position: relative;
     min-height: 100vh;
@@ -84,8 +101,13 @@ header span {
     font-weight: bold;
 }
 
+.DesignProject {
+    padding-top: 1%;
+    padding-left: 4%;
+    color: #0b0c17;
+}
+
 .FlyingBoy {
-    /* position: absolute; */
     top: 0%;
     right: 0%;
     animation-name: meine-animation;
@@ -93,14 +115,6 @@ header span {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-
-.FlyingBoy img {
-    height: 70%;
-    width: 70%;
-    /* transform: translate(550px, 50px); */
-    transform: translate(45%, 0%);
-    /* transform: translate(15vw, -20vh); */ 
-} 
 
 .intro {
     z-index: 10;
@@ -110,14 +124,8 @@ header span {
     position: absolute;
 }
 
-.intro img {
-    width: 30px;
-    height: 30px;
-}
-
 /* Main */
-
-/* General part1 */
+/* General part1-Section */
 .general_part1 {
     padding-left: 2%;
     display: grid;
@@ -157,8 +165,7 @@ header span {
     width: 60%;
 }
 
-/* General part2 */
-
+/* General part2-Section */
 .general_part2 {
     padding-left: 2%;
     display: grid;
@@ -172,7 +179,7 @@ header span {
 
 .ready {
     padding-left: 2%;
-    margin-top: 4%;
+    margin: 5% 0%;
     text-align: center;
 }
 
@@ -187,9 +194,7 @@ header span {
     padding-left: 65px;
 }
 
-
-/* Right side */
-
+/* Right side-Section */
 .projectRight {
     padding-left: 2%;
     line-height: 1.5;
@@ -202,6 +207,15 @@ header span {
 .projectRight div:nth-of-type(1) {
     max-width: 70%;
     align-content: center;
+}
+
+.projectRight h4 {
+    padding: 10px 0px;
+}
+
+/* Left side-Section */
+.projectLeft h4 {
+    padding: 10px 0px;
 }
 
 .projectLeft {
@@ -219,7 +233,10 @@ header span {
     padding-left: 5%;
 }
 
+/* Subscribe-Section */
+
 .subscribe {
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -228,15 +245,14 @@ header span {
     padding: 30px 0px;
 }
 
-.subscribe .form {
-    width: 20%;
-    background-color: red;
+.subscribe p {
+    padding: 20px 0px;
 }
 
-section .bigImg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.subscribe .form {
+    padding: 50px 0px;
+    width: 20%;
+    margin: 0 auto;
 }
 
 /* Form */
@@ -244,20 +260,40 @@ section .bigImg {
 input[type=email] {
     border: none;
     color: #0b0c17;
-    padding: 15px 75px;
+    padding: 15px 90px 15px 100px;
     border-radius: 3px;
+    box-shadow: 0px 0px 18px -2px rgba(0,0,0,0.3);
 }
 
 input[type=submit] {
-    margin-top: 10px;
+    margin-top: 30px;
     background-color: #ff3571;
     border: none;
     color: #FFF;
-    padding: 5px 55px;
+    padding: 15px 70px;
     border-radius: 3px;
 }
 
+input[type=submit]:hover {
+    background: linear-gradient(90deg, rgba(255,53,113,1) 20%, rgba(60,48,255,1));
+}
+
 /* Footer */
+
+footer {
+    display: flex;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+footer p {
+    padding-right: 1%;
+}
+
+footer img {
+    width: 20px;
+    height: 15px;
+}
 
 /* Animation */
 
@@ -273,6 +309,119 @@ input[type=submit] {
       }  
 } 
 
-/*  */
 
 /* Mediaqueries */
+/* Medium */
+@media (max-width: 900px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .DesignProject {
+        padding-left: 9%;
+        color: #FFF;
+    }
+
+    .general_part1  {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .general_part1 div p {
+        text-align: left;
+    }
+
+    .general_part1 div h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .general_part2 {
+        display: grid;
+        padding-top: 30px;
+        grid-template-columns: 50%;
+        /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    }
+
+    .general_part2 div {
+        width: max-content;
+        margin-right: 30px;
+    }
+
+    .projectLeft {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .projectRight {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .projectLeft p, .projectLeft h4, .projectLeft h3 {
+        text-align: left;
+        padding: 20px 0px 0px 50px;
+    }
+
+    .projectRight p, .projectRight h4, .projectRight h3 {
+        text-align: right;
+        padding-left: 70px;
+    }
+
+    .bigImg {
+        max-width: 50%;
+        max-height: 20vh;
+        object-fit: cover; 
+    }
+
+    .subscribe .form {
+     width: fit-content;
+    }
+}
+
+/* Small */
+@media (max-width: 600px) {
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .DesignProject {
+        padding-left: 15%;
+        color: #FFF;
+    }
+
+    .general_part1 div h2 img {
+        width: 20px;
+    }
+
+    .subscribe h2 {
+        font-size: 20px;
+    }
+
+    
+    input[type=email] {
+        padding: 15px 40px 15px 50px;
+    }
+
+    input[type=submit] {
+        padding: 15px 40px;
+        box-shadow: 0px 0px 18px -2px rgba(0,0,0,0.3);
+      }
+}
