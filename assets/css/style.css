@@ -6,11 +6,8 @@
     box-sizing: border-box;
 }
 
-/* Fonts */
-/* Roboto */
 
 /* Colors */
-
 /* #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000 */
 
 /* General */
@@ -21,6 +18,11 @@ html {
     max-width: 100%;
 }
 
+h1 {
+    font-size: 80px;
+    width: 50%;
+}
+
 h3 {
     color: #dddddd;
     font-size: 36px;
@@ -28,8 +30,9 @@ h3 {
 
 a {
     color: #ff3571;
+    padding-top: 5%;
     font-weight: 700;
-    padding-left: 3%;
+    position: absolute;
 }
 
 /* Images */
@@ -37,6 +40,7 @@ a {
 .steps {
     max-height: 25px;
     max-width: 25px;
+    margin-right: 20px;
 }
 
 #gallery img {
@@ -67,13 +71,13 @@ nav div {
 /* Header */
 
 header {
-    /* position: relative; */
+    position: relative;
     min-height: 100vh;
     height: 70vh;
     background-image: url(/assets/img/ilustracion1.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: top right;
 }
 
 header span {
@@ -82,6 +86,8 @@ header span {
 
 .FlyingBoy {
     /* position: absolute; */
+    top: 0%;
+    right: 0%;
     animation-name: meine-animation;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -98,7 +104,15 @@ header span {
 
 .intro {
     z-index: 10;
+    margin-top: -35%;
+    padding-left: 2%;
     scroll-behavior: smooth;
+    position: absolute;
+}
+
+.intro img {
+    width: 30px;
+    height: 30px;
 }
 
 /* Main */
@@ -146,41 +160,32 @@ header span {
 /* General part2 */
 
 .general_part2 {
-    background-color: red;
     padding-left: 2%;
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 20px;
 }
 
-.general_part2 .group div:nth-of-type(1) {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
+.group h4 {
+    margin-left: 20px;
 }
 
-.general_part2 .group div:nth-of-type(2) {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
+.ready {
+    padding-left: 2%;
+    margin-top: 4%;
+    text-align: center;
 }
 
-.general_part2 .group div:nth-of-type(3) {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 2;
-    grid-row-end: 2;
+.ready h2 {
+    font-size: 46px;
+    margin-bottom: 2%;
 }
-
-.general_part2 .group div:nth-of-type(4) {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
+.general_part2 p {
+    width: 50%;
+    line-height: 1.5;
+    padding-top: 2%;
+    padding-left: 65px;
 }
-
 
 
 /* Right side */
@@ -195,8 +200,6 @@ header span {
 }
 
 .projectRight div:nth-of-type(1) {
-    /* grid-column-start: 2;
-    grid-column-end: 2; */
     max-width: 70%;
     align-content: center;
 }
@@ -211,10 +214,23 @@ header span {
 }
 
 .projectLeft div:nth-of-type(2) {
-    /* grid-column-start: 2;
-    grid-column-end: 2; */
     max-width: 70%;
     align-content: center;
+    padding-left: 5%;
+}
+
+.subscribe {
+    text-align: center;
+}
+
+.subscribe h2 {
+    font-size: 40px;
+    padding: 30px 0px;
+}
+
+.subscribe .form {
+    width: 20%;
+    background-color: red;
 }
 
 section .bigImg {
@@ -233,6 +249,7 @@ input[type=email] {
 }
 
 input[type=submit] {
+    margin-top: 10px;
     background-color: #ff3571;
     border: none;
     color: #FFF;
@@ -258,3 +275,4 @@ input[type=submit] {
 
 /*  */
 
+/* Mediaqueries */
