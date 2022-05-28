@@ -11,9 +11,6 @@ body {
     width: 100%;
 }
 
-/* Colors */
-/* #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000 */
-
 /* General */
 
 html {
@@ -49,10 +46,10 @@ a {
     margin-right: 20px;
 }
 
-#gallery img {
+#gallery {
     padding: 5% 0% 4% 0%;
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 nav img {
@@ -109,7 +106,7 @@ header span {
 
 .DesignProject {
     padding-top: 1%;
-    padding-left: 4%;
+    margin-left: 6%;
     color: #0b0c17;
 }
 
@@ -151,10 +148,6 @@ header span {
 }
 
 .general_part1 div:nth-of-type(2) {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
     padding-left: 10%;
     padding-top: 20px;
     line-height: 1.5;
@@ -162,10 +155,7 @@ header span {
 }
 
 .general_part1 div:nth-of-type(3) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-column: 1 /  span 2;
     padding: 3% 0%;
     font-size: 40px;
     width: 60%;
@@ -173,7 +163,7 @@ header span {
 
 /* General part2-Section */
 .general_part2 {
-    padding-left: 2%;
+    padding: 2% 2%;
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 20px;
@@ -288,8 +278,7 @@ input[type=submit]:hover {
 
 footer {
     display: flex;
-    padding-top: 2%;
-    padding-left: 2%;
+    padding: 2% 0% 0% 2%;
 }
 
 footer p {
@@ -310,11 +299,9 @@ footer img {
         }
     100%
         {
-            opacity: 1; 
             transform: translateY(20px);
       }  
 } 
-
 
 /* Mediaqueries */
 /* Medium */
@@ -345,18 +332,17 @@ footer img {
 
     .general_part1 div h2 {
         text-align: center;
+        font-size: 30px;
         width: 100%;
     }
 
     .general_part2 {
         display: grid;
-        padding-top: 30px;
-        grid-template-columns: 50%;
-        transform: translateX(20%);
+        padding: 30px 0px 30px 30%;
+        grid-template-columns: 100%;
     }
 
     .general_part2 div {
-        width: max-content;
         margin-right: 30px;
     }
 
@@ -376,6 +362,10 @@ footer img {
         padding: 20px 0px;
     }
 
+    .projectRight .icons {
+        text-align: left;
+    }
+
     .projectLeft p, .projectLeft h4, .projectLeft h3 {
         text-align: left;
         padding: 20px 0px 0px 50px;
@@ -384,6 +374,19 @@ footer img {
     .projectRight p, .projectRight h4, .projectRight h3 {
         text-align: right;
         padding-left: 70px;
+
+    }
+
+    #AferSeveralWeeks {
+        transform: translateX(30%);
+        font-size: 30px;
+    }
+
+    #gallery {
+        width: 100%;
+        height: 80vh;
+        transform: translateY(-20%);
+        object-fit: cover; 
     }
 
     .bigImg {
@@ -399,8 +402,16 @@ footer img {
 
 /* Small */
 @media (max-width: 600px) {
-    h1, h2 {
+    /* h2 {
         font-size: 20px;
+        transform: translateX(40px);
+    } */
+
+    h1 {
+        font-size: 25px;
+        transform: translateX(180px);
+        color: #FFF;
+        padding-bottom: 50px;
     }
 
     .logo {
@@ -408,24 +419,58 @@ footer img {
         height: 30px;
     }
 
+    .ready {
+        transform: translateY(-150%);
+        padding-left: 10%;
+    }
+
+    .ready div {
+        text-align: left;
+     }
+
+    .ready h2 {
+        font-size: 20px;
+    }
+
     .DesignProject {
         padding-left: 15%;
         color: #FFF;
+    }
+
+    .general_part1 {
+        transform: translateY(-50%);
+    }
+
+    .general_part1 div h2 {
+        text-align: left;
     }
 
     .general_part1 div h2 img {
         width: 20px;
     }
 
+   #AferSeveralWeeks {
+        transform: translateX(40px);
+        text-align: left;
+    }
+
     .general_part2 {
-        transform: translateX(5%);
+        transform: translate(-100px, -20%);
     }
 
     .subscribe h2 {
         font-size: 20px;
+        text-align: left;
+        transform: translateX(40px);
     }
 
-    
+    #gallery {
+        width: 100%;
+        height: 50vh;
+        transform: translateY(-80%);
+        object-fit: cover; 
+    }
+
     input[type=email] {
         padding: 15px 40px 15px 50px;
     }
