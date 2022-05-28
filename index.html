@@ -9,25 +9,32 @@
   </head>
   <body></body>
   <header>
-    <div>
+    <nav>
+      <img class="logo" src="./assets/img/logo.svg" alt="Logo" />
+      <div>
+        <p><span>TheDesignProject</span><br />by a WebDesigner</p>
+      </div>
+    </nav>
+
+    <div class="FlyingBoy">
+      <img src="./assets/img/ilustracion_people.png" alt="Flying Boy" />
+    </div>
+
+    <div class="intro">
       <h1>How to become a better designer?</h1>
       <p>
         A challenge to improve your product design skills by solving problems in
         your daily life.
-        <img src="./assets/img/rocket.png" alt="Little Rocket" />
+        <img
+          class="littleIcons"
+          src="./assets/img/rocket.png"
+          alt="Little Rocket"
+        />
       </p>
     </div>
 
-    <a href="#">SCROLL TO SEE MORE — </a>
+    <a href="#general">SCROLL TO SEE MORE — </a>
   </header>
-
-  <nav>
-    <img src="./assets/img/logo.svg" alt="Logo" />
-    <div>
-      <p>TheDesignProject</p>
-      <p>by a WebDesigner</p>
-    </div>
-  </nav>
 
   <main>
     <section id="gallery">
@@ -57,9 +64,11 @@
 
       <div>
         <div>
-          <div><img src="./assets/img/title02.svg" alt="" /></div>
           <div>
-            <h3>Start with asking</h3>
+            <img class="steps" src="./assets/img/title02.svg" alt="" />
+          </div>
+          <div>
+            <h4>Start with asking</h4>
             <p>
               why You will start seeing things differently and coming up with
               more effective ways of achieving goals.
@@ -68,9 +77,11 @@
         </div>
 
         <div>
-          <div><img src="./assets/img/title04.svg" alt="" /></div>
           <div>
-            <h3>Your ideas will have more value</h3>
+            <img class="steps" src="./assets/img/title04.svg" alt="" />
+          </div>
+          <div>
+            <h4>Your ideas will have more value</h4>
             <p>
               By looking at problems from a different perspective, your ideas
               will be fresher and more valuable.
@@ -79,9 +90,11 @@
         </div>
 
         <div>
-          <div><img src="./assets/img/title01.svg" alt="" /></div>
           <div>
-            <h3>Design solutions with love</h3>
+            <img class="steps" src="./assets/img/title01.svg" alt="" />
+          </div>
+          <div>
+            <h4>Design solutions with love</h4>
             <p>
               Only when you experience a problem yourself do you understand the
               frustration of the users and resolve to end it.
@@ -90,9 +103,11 @@
         </div>
 
         <div>
-          <div><img src="./assets/img/title02.svg" alt="" /></div>
           <div>
-            <h3>Share and show your work</h3>
+            <img class="steps" src="./assets/img/title02.svg" alt="" />
+          </div>
+          <div>
+            <h4>Share and show your work</h4>
             <p>
               As designers, we are often afraid of showing work that’s not
               finished or doesn’t look perfect. You will learn to accept
@@ -112,7 +127,7 @@
       </div>
     </section>
 
-    <section class="">
+    <section class="projectLeft">
       <div><img src="./assets/img/step01.png" alt="Boy with" /></div>
       <div>
         <h3>01</h3>
@@ -127,7 +142,7 @@
       </div>
     </section>
 
-    <section class="">
+    <section class="projectRight">
       <div><img src="./assets/img/step02.png" alt="Girl with ideas" /></div>
       <div>
         <h3>02</h3>
@@ -141,7 +156,7 @@
       </div>
     </section>
 
-    <section class="">
+    <section class="projectLeft">
       <div>
         <img src="./assets/img/step03.png" alt="Team work on the design" />
       </div>
@@ -157,7 +172,7 @@
       </div>
     </section>
 
-    <section class="">
+    <section class="projectRight">
       <div>
         <img
           src="./assets/img/step04.png"
@@ -165,7 +180,7 @@
         />
       </div>
       <div>
-        <h3>03</h3>
+        <h3>04</h3>
         <img src="./assets/img/step04.svg" alt="Surfer" />
         <h4>Share your work</h4>
         <p>
@@ -186,13 +201,16 @@
         </p>
       </div>
       <div>
-        <button>Subcribe</button>
+        <form action="">
+          <input type="email" placeholder="Write your email here" required />
+          <input type="submit" value="Subscribe" />
+        </form>
       </div>
     </section>
   </main>
 
   <footer>
     <p>Created with Love by a Webdesigner</p>
-    <img src="./assets/img/love.png" alt="Heart" />
+    <img class="littleIcons" src="./assets/img/love.png" alt="Heart" />
   </footer>
 </html>

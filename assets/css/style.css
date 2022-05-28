@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Fonts */
 /* Roboto */
 
@@ -11,10 +17,125 @@
 
 html {
     font-family: 'Roboto';
+    max-height: 100%;
+    max-width: 100%;
 }
 
-/* #################################################################################### */
+h3 {
+    color: #dddddd;
+    font-size: 36px;
+}
+
+a {
+    color: #ff3571;
+    font-weight: 700;
+    padding-left: 3%;
+}
+
+/* Images */
+
+.steps {
+    max-height: 25px;
+    max-width: 25px;
+}
+
+#gallery img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* nav */
+
+nav {
+    display: flex;
+    position: fixed;
+    padding-top: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+}
+
+nav img {
+    margin-left: 20px;
+}
+
+nav div {
+    margin-left: 1.5%;
+}
+
+/* Header */
 
 header {
+    /* position: relative; */
+    min-height: 100vh;
+    height: 70vh;
     background-image: url(/assets/img/ilustracion1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
 }
+
+header span {
+    font-weight: bold;
+}
+
+.FlyingBoy {
+    /* position: absolute; */
+    animation-name: meine-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.FlyingBoy img {
+    height: 70%;
+    width: 70%;
+    /* transform: translate(550px, 50px); */
+    transform: translate(45%, 0%);
+    /* transform: translate(15vw, -20vh); */ 
+} 
+
+.intro {
+    z-index: 10;
+    scroll-behavior: smooth;
+}
+
+/* Main */
+
+main {
+    display: grid;
+}
+
+#general {
+
+}
+
+/* Form */
+
+input[submit] {
+    background-color: #ff3571;
+    border: none;
+    color: #FFF;
+    padding: 5px 35px;
+    border-radius: 3px;
+}
+
+/* Footer */
+
+/* Animation */
+
+@keyframes meine-animation {
+    0%
+        {
+            transform: translateY(10px);
+        }
+    100%
+        {
+            opacity: 1; 
+            transform: translateY(20px);
+      }  
+} 
+
+/*  */
+
